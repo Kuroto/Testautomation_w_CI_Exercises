@@ -6,5 +6,7 @@ public class main_test
     {
         System.out.println("Hello Dog!");
         System.out.println("Hello Cat!");
+
+        System.out.println("Hello World!!");
     }
 }
