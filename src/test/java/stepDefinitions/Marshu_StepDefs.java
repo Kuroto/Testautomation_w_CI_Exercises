@@ -75,7 +75,8 @@ public class Marshu_StepDefs
     @When("calculating the result")
     public void addingTwoNumbers()
     {
-        WebElement wait = (new WebDriverWait(driver, Duration));
+        WebElement wait = (new WebDriverWait(driver, Duration.ofSeconds(10))).
+                until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("[value='Find Addition']")));
         driver.findElement(By.cssSelector("[value='Find Addition']")).click();
     }
 
